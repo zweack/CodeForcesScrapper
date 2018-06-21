@@ -40,7 +40,7 @@ def readFile():
     return text
 
 
-def populate():
+def calculate():
 
     handles = readFile()
     userHandle = []
@@ -69,7 +69,7 @@ def populate():
 
 def main():
 
-    userHandle, userTitle, userRating, maxRating = populate()
+    userHandle, userTitle, userRating, maxRating = calculate()
     userDetails(userHandle, userTitle, userRating, maxRating)
     num = int(input("Choose option: 1-"+str(len(userHandle)) +" To view profile OR Press "+str(len(userHandle)+1)+" to exit : "))
 
